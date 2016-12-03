@@ -1,0 +1,213 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="InicioGz.master.cs" Inherits="VentanaGzWeb.InicioGz" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>VentanaGz</title>
+  
+    <link rel="/stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script type="/text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="/JQuery/toastr.min.js"></script>
+    <link href="/Boostrap/toastr.min.css" rel="stylesheet" />
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="/js/bootstrap.min.js"></script>
+   
+   
+    <style type="text/css">
+
+
+        .auto-style8 {
+            width: 1281px;
+            height: 589px;
+            margin-right: 0px;
+        }
+        .auto-style10 {
+            width: 1144px;
+            height: 504px;
+        }
+        .auto-style14 {
+            height: 198px;
+            width: 1024px;
+        }
+        .auto-style15 {
+            float: left;
+            height: 2px;
+            padding: 15px 15px;
+            font-size: xx-large;
+            line-height: 20px;
+            left: 0px;
+            top: 1px;
+            width: 226px;
+            color: #000099;
+        }
+        .auto-style19 {
+            font-size: large;
+            color: #000066;
+        }
+        .auto-style20 {
+            width: 77px;
+        }
+        </style>
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+
+  
+    
+     
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="auto-style15" style="font-family:Forte;" href="/Default.aspx"> <strong>VentantaGz</strong></a>
+       
+    </div>
+
+
+    <div class="collapse navbar-collapse" style="background-color:#93beed;" id="bs-example-navbar-collapse-1">
+      
+      <ul id="RegistroMaster" runat="server" class="nav navbar-nav">       
+        <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="auto-style19"><strong>Registros</strong></span> <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li id="RegistroUsuarioWeb" runat="server"><a href="/Registros/ReUsuario.aspx">Usuario</a></li>
+            <li><a href="/Registros/ReCliente.aspx">Cliente</a></li>
+            <li><a href="/Registros/ReMateriales.aspx">Materiales</a></li>
+            <li id="RegistroProductoWeb" runat="server"><a href="/Registros/ReProductos.aspx">Productos</a></li>
+            <li><a href="/Registros/ReProyectoDetalle.aspx">Proyecto</a></li>
+          </ul>
+        </li>
+      </ul>
+       
+      <ul id="ConsultaMaster" runat="server" class="nav navbar-nav">
+        <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="auto-style19"><strong>Consultas</strong></span> <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li id="ConsultaUsuarioWeb" runat="server"><a href="/Consultas/ConsultaUsuario.aspx">Usuario</a></li>
+            <li ><a href="/Consultas/ConsultaClientes.aspx">Cliente</a></li>
+            <li><a href="/Consultas/ConsultaMateriales.aspx">Materiales</a></li>
+             <li><a href="/Consultas/ConsultaProducto.aspx">Productos</a></li>
+              <li><a href="/Consultas/ConsultaProyecto.aspx">Proyecto</a></li>
+               <li><a href="/Consultas/ConsultaPresupuesto.aspx">Presupuesto</a></li>
+          </ul>
+        </li>
+      </ul>
+
+ <ul  class="nav navbar-nav" style="color:#93beed">
+       
+     <linkButton  type="button" id="LogingWeb" runat="server" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">
+
+  Iniciar Sesión
+          
+</linkButton>
+    
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    
+       <asp:Button ID="CerrarSeButton" runat="server" CssClass="btn btn-default" BackColor="#93beed" ForeColor="#000066" Text="Cerrar Sesión" OnClick="CerrarSeButton_Click" style="margin-left: 562px" Width="118px" />
+    </div>
+              
+
+                   
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Inicia sesion con su nombre de usuario y su contrasena</h4>
+      </div>
+      <div class="modal-body">
+       
+             <asp:Panel ID="LogingPanel" runat="server" BackImageUrl="~/Imagenes/LOG1.jpg" Height="370px" Width="582px">
+                    &nbsp;&nbsp;&nbsp;<br />
+                    <br />
+                    <br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                    <br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                    <asp:TextBox ID="UserNameTextBox" runat="server" BackColor="#6699ff" BorderColor="#0a0aa7" CssClass="tex" ForeColor="White" Height="27px" ValidationGroup="vg" Width="234px"></asp:TextBox>
+                    &nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="UserNameRequiredFieldValidator" runat="server" ControlToValidate="UserNameTextBox" ErrorMessage="Campo Nombre Usuario Vacio" style="color: #FF0000; font-size: x-large" ValidationGroup="vg">*</asp:RequiredFieldValidator>
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                    <asp:TextBox ID="ContraseñaTextBox0" runat="server" BackColor="#6699ff" BorderColor="#0a0aa7" CssClass="tex" ForeColor="White" Height="27px" style="margin-left: 0px" TextMode="Password" ValidationGroup="vg" Width="286px"></asp:TextBox>
+                    &nbsp;<asp:RequiredFieldValidator ID="ContrasenaRequiredFieldValidator" runat="server" ControlToValidate="ContraseñaTextBox0" ErrorMessage="Campo Contraseña Vacio" style="font-size: x-large; color: #FF0000" ValidationGroup="vg">*</asp:RequiredFieldValidator>
+                    &nbsp;
+                    <asp:ImageButton ID="EntrarImageButton" runat="server" BorderColor="#0b0565" Height="45px" ImageUrl="~/Imagenes/Enter.png" OnClick="EntrarImageButton_Click" ValidationGroup="vg" Width="67px" OnLoad="Page_Load" />
+                    &nbsp;<br />&nbsp;<strong><br />
+                    <br />
+                    <br />
+                    <br />
+                    <div style="text-align: left; width: 231px; height: 37px;">
+                      
+                        <asp:ValidationSummary ID="ValidationSummary2" runat="server" style="font-size: large; color: #FFFFFF" ValidationGroup="vg" Height="33px" Width="236px" />
+                    </div>
+                    </strong>
+                    <br />
+                    &nbsp;</asp:Panel>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+     
+    
+       </ul>
+      
+      
+
+    </div>
+
+        
+
+        
+   <table style="font-family:Arial" class="auto-style8">
+    
+       <tr>
+
+            <td style="background-color:#d7acac; class="auto-style13" class="auto-style20" >&nbsp;</td>
+            <td style="background-color:#e8e5e5" class="auto-style10">
+               
+            
+                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                     
+                             <h2 class="auto-style14"> CONTENIDO DE CADA UNA DE LAS</h2>
+                             
+
+                         </asp:ContentPlaceHolder>
+           </td>
+       </tr>
+
+
+       <tr>
+           <td colspan="2" style="height:80px;background-color:#93beed;">
+              <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Informacion web</b>
+
+           </td>
+       </tr>
+
+
+   </table>
+
+    </form>
+</body>
+</html>
