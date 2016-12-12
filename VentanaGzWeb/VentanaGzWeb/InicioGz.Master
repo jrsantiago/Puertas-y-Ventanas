@@ -21,35 +21,57 @@
 
 
         .auto-style8 {
-            width: 1281px;
+            width: 1100px;
             height: 589px;
             margin-right: 0px;
         }
         .auto-style10 {
-            width: 1144px;
+            width: 632px;
             height: 504px;
         }
         .auto-style14 {
             height: 198px;
-            width: 1024px;
+            width: 851px;
         }
         .auto-style15 {
             float: left;
-            height: 2px;
+            height: 7px;
             padding: 15px 15px;
             font-size: xx-large;
             line-height: 20px;
             left: 0px;
             top: 1px;
-            width: 226px;
-            color: #000099;
+            width: 282px;
+            color: #000066;
         }
         .auto-style19 {
             font-size: large;
             color: #000066;
         }
-        .auto-style20 {
-            width: 77px;
+        .auto-style21 {
+            float: left;
+            width: 945px;
+        }
+        .auto-style22 {
+            border-style: none;
+            border-color: inherit;
+            border-width: 0;
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            background-color: #000066;
+        }
+        .auto-style23 {
+            width: 421px;
+            left: 20%;
+        }
+        .auto-style24 {
+            width: 220px;
+            height: 91px;
         }
         </style>
   
@@ -57,17 +79,13 @@
 <body>
     <form id="form1" runat="server">
 
-  
-    
-     
-     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+
+     <div class="auto-style21" style="background-color:#93beed">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="left: 7px; top: 0px; width: 30px">
+        <span class="auto-style22">Toggle navigation</span>
         <span class="icon-bar"></span>
       </button>
-      <a class="auto-style15" style="font-family:Forte;" href="/Default.aspx"> <strong>VentantaGz</strong></a>
+      <a class="auto-style15" style="font-family:Forte;" href="/Default.aspx"> <strong>PvSanMartin</strong></a>
        
     </div>
 
@@ -100,6 +118,7 @@
           </ul>
         </li>
       </ul>
+               <asp:Button ID="CerrarSeButton" runat="server" CssClass="btn btn-default" BackColor="#93beed" ForeColor="#000066" Text="Cerrar Sesión" OnClick="CerrarSeButton_Click" style="margin-left: 562px" Width="118px" />
 
  <ul  class="nav navbar-nav" style="color:#93beed">
        
@@ -108,18 +127,7 @@
   Iniciar Sesión
           
 </linkButton>
-    
-     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    
-       <asp:Button ID="CerrarSeButton" runat="server" CssClass="btn btn-default" BackColor="#93beed" ForeColor="#000066" Text="Cerrar Sesión" OnClick="CerrarSeButton_Click" style="margin-left: 562px" Width="118px" />
-    </div>
-              
+
 
                    
      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -127,11 +135,11 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Inicia sesion con su nombre de usuario y su contrasena</h4>
+        <h4 class="modal-title" id="myModalLabel">Iniciar sesion con su nombre de usuario y su contrasena</h4>
       </div>
       <div class="modal-body">
        
-             <asp:Panel ID="LogingPanel" runat="server" BackImageUrl="~/Imagenes/LOG1.jpg" Height="370px" Width="582px">
+            <asp:Panel ID="LogingPanel" runat="server" BackImageUrl="~/Imagenes/LOG1.jpg" Height="370px" Width="582px">
                     &nbsp;&nbsp;&nbsp;<br />
                     <br />
                     <br />
@@ -151,15 +159,15 @@
                     <asp:ImageButton ID="EntrarImageButton" runat="server" BorderColor="#0b0565" Height="45px" ImageUrl="~/Imagenes/Enter.png" OnClick="EntrarImageButton_Click" ValidationGroup="vg" Width="67px" OnLoad="Page_Load" />
                     &nbsp;<br />&nbsp;<strong><br />
                     <br />
-                    <br />
-                    <br />
-                    <div style="text-align: left; width: 231px; height: 37px;">
+                    <div style="text-align: left; " class="auto-style24">
                       
-                        <asp:ValidationSummary ID="ValidationSummary2" runat="server" style="font-size: large; color: #FFFFFF" ValidationGroup="vg" Height="33px" Width="236px" />
+                        <asp:ValidationSummary ID="ValidationSummary2" runat="server" style="font-size: large; color: #FFFFFF" ValidationGroup="vg" Height="90px" Width="224px" />
                     </div>
                     </strong>
                     <br />
-                    &nbsp;</asp:Panel>
+                    &nbsp;</asp:Panel>   
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -180,12 +188,12 @@
         
 
         
-   <table style="font-family:Arial" class="auto-style8">
+   <table style="font-family:Arial; width:100%" class="auto-style8">
     
        <tr>
 
-            <td style="background-color:#d7acac; class="auto-style13" class="auto-style20" >&nbsp;</td>
-            <td style="background-color:#e8e5e5" class="auto-style10">
+            <td style="background-color:#d7acac; " class="auto-style23" class="auto-style20" >&nbsp;</td>
+            <td style="background-color:#e8e5e5; width:100%" class="auto-style10">
                
             
                          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -199,7 +207,7 @@
 
 
        <tr>
-           <td colspan="2" style="height:80px;background-color:#93beed;">
+           <td colspan="2" style="height:80px; background-color:#93beed;">
               <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Informacion web</b>
 
            </td>

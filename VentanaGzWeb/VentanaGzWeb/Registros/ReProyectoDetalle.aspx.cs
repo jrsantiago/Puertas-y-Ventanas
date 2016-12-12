@@ -20,6 +20,8 @@ namespace VentanaGzWeb.Registros
                 FechaTextBox.Text = DateTime.Now.ToString("dd/MM/yy");
                 FechaTextBox.ReadOnly = true;
                 LLenarGridview();
+
+                ClienteTextBox.Text = Request.QueryString["NombreCliente"];
             }
 
             LlenarDrowList();
@@ -87,12 +89,12 @@ namespace VentanaGzWeb.Registros
             }
             return Retornar;
         }      
-        public void ObtenerValores(Proyectos Pro,Productos pro)
+        public void ObtenerValores(Proyectos Pro,Productos pro, Clientes cli)
         {
           
             Pro.Fecha = FechaTextBox.Text;
-            Pro.Total = ConvertirTotal();
-            Pro.ClienteId = ConvertirId();
+            Pro.Total = ConvertirTotal(); 
+            Pro.ClienteId = cli.ObtenerCliente(ClienteTextBox.Text);
             Pro.ProyectoId = ConvertirIdProyecto();
            
 
@@ -213,13 +215,18 @@ namespace VentanaGzWeb.Registros
         {
            
         }
-
+        public void ConsultaQuerry(Proyectos pro)
+        {
+          
+            Response.Redirect("../Consultas/ConsultaProyecto.aspx?IdProyecto=" + pro.ProQuerry);
+        }
         protected void GuardarButton_Click(object sender, EventArgs e)
         {
             Proyectos pro = new Proyectos();
             Productos p = new Productos();
+            Clientes cli = new Clientes();
       
-            ObtenerValores(pro,p);
+            ObtenerValores(pro,p,cli);
 
             if (CamposBacios())
             {
@@ -243,6 +250,7 @@ namespace VentanaGzWeb.Registros
                 }
                 Limpiar();
                 Utilitarios.ShowToastr(this, "Guardado", "Mensaje", "success");
+                ConsultaQuerry(pro);
             }
            
         }

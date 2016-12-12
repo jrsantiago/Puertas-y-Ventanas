@@ -23,8 +23,9 @@ namespace BLL
         //}
         public ProductosDetalle(int MaterialId, int Asociacion)
         {      
-            this.MaterialId = MaterialId;       
+              
             this.Asociacion = Asociacion;
+            this.MaterialId = MaterialId;
         }
     }
 }

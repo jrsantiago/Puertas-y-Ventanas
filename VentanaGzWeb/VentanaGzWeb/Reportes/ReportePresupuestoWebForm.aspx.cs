@@ -27,7 +27,7 @@ namespace VentanaGzWeb.Reportes
 
                 PresupuestoReportViewer.LocalReport.ReportPath = @"Reportes\ReportPresupuesto.rdlc";
 
-                ReportDataSource source = new ReportDataSource("Presupuesto", mate.ListaConsulta("*", Text, Orden));
+                ReportDataSource source = new ReportDataSource("PresupuestoDataSet", mate.ListarPresupuesto("M.Detalle,SUM(O.Cantidad)AS Cantidad", Text, Orden));
 
                 PresupuestoReportViewer.LocalReport.DataSources.Add(source);
                 PresupuestoReportViewer.LocalReport.Refresh();

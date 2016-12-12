@@ -1,0 +1,7 @@
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Release\BLL.dll
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Release\BLL.pdb
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Release\DAL.dll
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Release\DAL.pdb
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Release\BLL.dll
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Release\BLL.pdb

@@ -23,9 +23,7 @@
                     <tr>
                         <td class="text-center" style="height: 72px"> Cliente Id <asp:TextBox ID="BuscarClienteTextBox" runat="server" ValidationGroup="vgD" Width="149px"></asp:TextBox>
 &nbsp;&nbsp;<asp:Button ID="BuscarClienteButton" CssClass="btn btn-primary" runat="server" Text="Buscar" Width="91px" OnClick="BuscarClienteButton_Click" ValidationGroup="vgD" />
-                        &nbsp;
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="BuscarClienteTextBox" ErrorMessage="Campo Cliente Vacio" ForeColor="#CC0000" style="font-size: x-large" ValidationGroup="vgD">*</asp:RequiredFieldValidator>
-                        &nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="BuscarClienteTextBox" ErrorMessage="Solo Caracteres Numericos" ForeColor="#CC0000" style="font-size: x-large" ValidationExpression="[0-9]+" ValidationGroup="vgD">*</asp:RegularExpressionValidator>
+                        &nbsp;&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="BuscarClienteTextBox" ErrorMessage="Solo Caracteres Numericos" ForeColor="#CC0000" style="font-size: x-large" ValidationExpression="[0-9]+" ValidationGroup="vgD">*</asp:RegularExpressionValidator>
                         </td>
                     </tr>
                     <tr>

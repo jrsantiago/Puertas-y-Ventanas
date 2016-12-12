@@ -26,6 +26,8 @@ namespace VentanaGzWeb.Registros
                 MinimoPieTextBox.Visible = false;
                 MinimoPieLabel.Visible = false;
 
+
+
             }
             LlenarDropDownMaterial();
         }
@@ -38,6 +40,8 @@ namespace VentanaGzWeb.Registros
             DescripcionTextBox.Text = tra.Descripcion;
             traTextBox.Text = tra.Pie.ToString();
             MinimoPieTextBox.Text = tra.MinimoPie.ToString();
+            PrecioPieMaximoTextBox1.Text = tra.PieM.ToString();
+            MaximoPieTextBox0.Text = tra.MaximoPie.ToString();
 
 
             foreach (var item in tra.Detalle)
@@ -68,6 +72,9 @@ namespace VentanaGzWeb.Registros
             tra.Descripcion = DescripcionTextBox.Text;
             tra.Pie = Convert.ToSingle(traTextBox.Text);
             tra.ProductoId = ConvertirId();
+     
+           
+
 
             if (string.IsNullOrWhiteSpace(MinimoPieTextBox.Text))
             {
@@ -101,6 +108,8 @@ namespace VentanaGzWeb.Registros
 
             foreach (GridViewRow row in ProductoGridView.Rows)
             {
+                
+
                 if (row.Cells[1].Text == "Ancho")
                 {
                     asociado = 0;
@@ -184,6 +193,7 @@ namespace VentanaGzWeb.Registros
         protected void GuardarButton_Click(object sender, EventArgs e)
         {
             Productos tra = new Productos();
+    
             if (ProductoGridView.Rows.Count == 0)
             {
                 Utilitarios.ShowToastr(this, "ERROR (Campos Vacios) -- Agregar Materiales", "Mensaje", "error");
@@ -192,7 +202,7 @@ namespace VentanaGzWeb.Registros
             else
             {
                 ObtenerDatos(tra);
-                if (BuscarTextBox.Text == "")
+                if (String.IsNullOrWhiteSpace(BuscarTextBox.Text))
                 {
                     if (tra.Insertar())
                     {

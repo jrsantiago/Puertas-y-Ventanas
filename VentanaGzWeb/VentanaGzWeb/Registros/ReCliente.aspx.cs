@@ -48,6 +48,10 @@ namespace VentanaGzWeb.Registros
             TelefonoTextBox.Text = "";
 
         }
+        public void PasarCliente()
+        {
+            Response.Redirect("ReProyectoDetalle.aspx?NombreCliente=" + NombreTextBox.Text);
+        }
         public int convertirId()
         {
             int id = 0;
@@ -125,7 +129,9 @@ namespace VentanaGzWeb.Registros
 
                     }
                 }
+            
                 Utilitarios.ShowToastr(this, "Guardado", "Mensaje", "success");
+                PasarCliente();
             }
         }
     }

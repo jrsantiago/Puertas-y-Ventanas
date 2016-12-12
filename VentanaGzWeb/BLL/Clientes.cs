@@ -155,5 +155,20 @@ namespace BLL
             }
             return Retornar;
         }
+        public int ObtenerCliente(string cli)
+        {
+            DbVentana cone = new DbVentana();
+            DataTable dt = new DataTable();
+            int id = 0;
+            dt = cone.ObtenerDatos(String.Format("Select * from Clientes where Nombre = '{0}'", cli));
+
+            if (dt.Rows.Count > 0)
+            {
+                id =(int)dt.Rows[0]["ClienteId"];
+            }
+
+            return id;
+           
+        }
     }
 }

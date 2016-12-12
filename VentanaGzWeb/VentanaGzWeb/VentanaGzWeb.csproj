@@ -85,7 +85,9 @@
     <Content Include="Imagenes\Cliente or usuario.png" />
     <Content Include="Imagenes\Enter.png" />
     <Content Include="Imagenes\event-search-icon.png" />
+    <Content Include="Imagenes\Facebook-icon.png" />
     <Content Include="Imagenes\gear-icon.png" />
+    <Content Include="Imagenes\Gmail-icon.png" />
     <Content Include="Imagenes\images %281%29.jpg" />
     <Content Include="Imagenes\ImgPass.png" />
     <Content Include="Imagenes\ImgUser.PNG" />
@@ -93,12 +95,14 @@
     <Content Include="Imagenes\LOG.jpg" />
     <Content Include="Imagenes\LOG1.jpg" />
     <Content Include="Imagenes\Office-Customer-Male-Light-icon.png" />
+    <Content Include="Imagenes\Phone-icon.png" />
     <Content Include="Imagenes\Rob-Sanders-Gear-Gear.ico" />
     <Content Include="Imagenes\SEO-icon %282%29.png" />
     <Content Include="Imagenes\SEO-icon.png" />
     <Content Include="Imagenes\Status-dialog-password-icon.png" />
     <Content Include="Imagenes\user-login-icon.png" />
     <Content Include="Imagenes\Ventana.png" />
+    <Content Include="Imagenes\Whatsapp-icon.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-3.1.1.min.js" />
@@ -114,6 +118,20 @@
     <Content Include="ProyectoWebDataSet.xsc">
       <DependentUpon>ProyectoWebDataSet.xsd</DependentUpon>
     </Content>
+    <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
+    <Content Include="apiapp.json" />
+    <Content Include="PresupuestoVentanaWebDataSet.xsc">
+      <DependentUpon>PresupuestoVentanaWebDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="PresupuestoVentanaWebDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PresupuestoVentanaWebDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="PresupuestoVentanaWebDataSet.xss">
+      <DependentUpon>PresupuestoVentanaWebDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\PV-San Martin.pubxml" />
     <None Include="ProyectoWebDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ProyectoWebDataSet.Designer.cs</LastGenOutput>
@@ -201,6 +219,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MaterialesDbVentanaGzWebDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PresupuestoVentanaWebDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PresupuestoVentanaWebDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

@@ -27,8 +27,7 @@
                     <tr>
                         <td class="text-center" style="height: 27px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Descripción&nbsp;&nbsp;&nbsp;<asp:TextBox ID="DescripcionTextBox" runat="server" Width="221px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="DescripcionTextBox" ErrorMessage="Campo Descripcion Vacio" ForeColor="#CC0000" style="font-size: x-large" ValidationGroup="vgP">*</asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ControlToValidate="DescripcionTextBox" ErrorMessage="Solo Caracteres De Letras" ForeColor="#CC0000" style="font-size: x-large" ValidationExpression="^[a-zA-Z]+(\s*[a-zA-Z]*)*[a-zA-Z]+$" ValidationGroup="vgP">*</asp:RegularExpressionValidator>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:Button ID="MaximoButton" CssClass="btn btn-primary" runat="server" Text="Precio Pie Maximo" OnClick="MaximoButton_Click" />
                         </td>
                     </tr>
@@ -74,11 +73,11 @@
                            
                             <table style="width:100%;">
                                 <tr>
-                                    <td style="width: 470px">&nbsp;</td>
+                                    <td style="width: 396px">&nbsp;</td>
                                     <td>&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td style="width: 470px">&nbsp;</td>
+                                    <td style="width: 396px">&nbsp;</td>
                                     <td>
                            
                             <asp:GridView ID="ProductoGridView" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" Width="200px">

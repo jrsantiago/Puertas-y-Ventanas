@@ -13,6 +13,42 @@ namespace VentanaGzWeb {
     public partial class Default {
         
         /// <summary>
+        /// UsuarioImagen0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image UsuarioImagen0;
+        
+        /// <summary>
+        /// UsuarioImagen3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image UsuarioImagen3;
+        
+        /// <summary>
+        /// UsuarioImagen1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image UsuarioImagen1;
+        
+        /// <summary>
+        /// UsuarioImagen2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image UsuarioImagen2;
+        
+        /// <summary>
         /// UsuarioImagen control.
         /// </summary>
         /// <remarks>

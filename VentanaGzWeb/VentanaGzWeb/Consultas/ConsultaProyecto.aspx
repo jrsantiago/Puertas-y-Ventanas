@@ -3,22 +3,23 @@
     <table  class="text-center" style="width:100%; height: 209px;">
         <tr style="font-family:Forte">
             <td class="auto-style16" style="font-size: xx-large ;color: #0B0664">Consulta Proyectos&nbsp;
-                <span  style="font-size: xx-large; font-family:Arial; width: 512px;" class="auto-style16" ><asp:Image ID="UsuarioImagen" ImageUrl='~/Imagenes/SEO-icon (2).png' runat="server" Height="66px" Width="67px" /></span>
+                <span  style="font-size: xx-large; font-family:Arial; width: 512px;" class="auto-style16" ><asp:Image ID="UsuarioImagen" ImageUrl='~/Imagenes/SEO-icon (2).png' runat="server" Height="78px" Width="77px" /></span>
                 <table style="width:100%;">
                     <tr>
-                        <td style="font-size: large; font-family:Arial; color: #000000; height: 76px;">Buscar por 
+                        <td style="font-size: large; font-family:Arial; color: #000000">
+                            <br />
+                            Buscar por 
                             <asp:DropDownList ID="ProyectoDropDownList" runat="server" Height="22px" Width="170px" OnSelectedIndexChanged="ProyectoDropDownList_SelectedIndexChanged" AutoPostBack="True">
-                                <asp:ListItem>Id de Cliente</asp:ListItem>
                                 <asp:ListItem Value="Id de Proyecto"></asp:ListItem>
                                 <asp:ListItem>Fecha</asp:ListItem>
+                                <asp:ListItem>Id de Cliente</asp:ListItem>
                             </asp:DropDownList>
 &nbsp;<asp:TextBox ID="BuscarTextBox" runat="server" Height="22px"></asp:TextBox>
 &nbsp; 
                             <asp:Button CssClass="btn btn-primary" ID="BuscarButton" runat="server" Text="Buscar" OnClick="BuscarButton_Click" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: large; font-family:Arial; color: #000000">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <br />
+                            <br />
                             <asp:Label ID="FechaDesdeLabel" runat="server" Text="Desde"></asp:Label>
                      
                             <asp:TextBox ID="PriFechaTextBox0" runat="server" Width="105px" AutoPostBack="True" Visible="False"></asp:TextBox>
@@ -28,7 +29,7 @@
                             <asp:Label ID="FechaHastaLabel" runat="server" Text="Hasta"></asp:Label>
                             <asp:TextBox ID="SegFechaTextBox" runat="server" Width="103px"></asp:TextBox>
 &nbsp;<asp:ImageButton ID="SegundaImageUpdateButton0" runat="server" ImageUrl="/Imagenes/event-search-icon.png" Width="36px" OnClick="SegundaImageUpdateButton0_Click" />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                             <br />
                         </td>
                     </tr>

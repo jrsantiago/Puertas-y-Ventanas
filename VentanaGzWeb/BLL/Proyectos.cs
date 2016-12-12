@@ -14,6 +14,7 @@ namespace BLL
         public string Descripcion { get; set; }
         public string Fecha { get; set; }
         public float Total { get; set; }
+        public int ProQuerry { get; set; }
         public List<ProyectosDetalle> Detalle { get; set; }
         public List<ProductosDetalle> ListaMateriales { get; set; }
 
@@ -24,6 +25,7 @@ namespace BLL
             this.Descripcion = "";
             this.Fecha = "";
             this.Total = 0;
+            this.ProQuerry = 0;
             this.Detalle = new List<ProyectosDetalle>();
             this.ListaMateriales = new List<ProductosDetalle>();
 
@@ -55,7 +57,8 @@ namespace BLL
                     foreach (ProyectosDetalle item in this.Detalle)
                     {
                         //areglar ete insert (poner id del producto)
-                        Identity2 = cone.ObtenerValor(String.Format("Insert Into ProyectosDetalle(ProyectoId,ProductoId,Pie,Ancho,Altura,Precio,Cantidad) Values({0},'{1}',{2},{3},{4},{5},{6}) SELECT @@Identity", Retornar, item.ProductoId, item.Pie, item.Ancho, item.Altura, item.Precio,item.Cantidad));
+                        Identity2 = cone.ObtenerValor(String.Format("Insert Into ProyectosDetalle(ProyectoId,ProductoId,Pie,Ancho,Altura,Precio,Cantidad) Values({0},{1},{2},{3},{4},{5},{6}) SELECT @@Identity", Retornar, item.ProductoId, item.Pie, item.Ancho, item.Altura, item.Precio,item.Cantidad));
+                        this.ProQuerry = Retornar;
                         int.TryParse(Identity2.ToString(), out Retornar2);
 
                         //con el id anterior del producto hacer un select a a la tabla productodetalle y llenar ListaMateriales

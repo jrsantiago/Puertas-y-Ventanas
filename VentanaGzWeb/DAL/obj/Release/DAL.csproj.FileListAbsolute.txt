@@ -1,0 +1,5 @@
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\DAL\bin\Release\DAL.dll
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\DAL\bin\Release\DAL.pdb
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\DAL\obj\Release\DAL.dll
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\DAL\obj\Release\DAL.pdb

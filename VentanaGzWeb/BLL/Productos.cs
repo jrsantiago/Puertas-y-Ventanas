@@ -10,7 +10,7 @@ namespace BLL
    public class Productos : ClaseMaestra
     {
         public int ProductoId { get; set; }
-        public int Clienteid { get; set; }
+      
         public int  MateriaId { get; set; }
         public string Descripcion { get; set; }
         public float Pie {get; set;}
@@ -50,7 +50,7 @@ namespace BLL
                  
                     foreach (ProductosDetalle item in this.Detalle)
                     {
-                      cone.Ejecutar(String.Format("Insert into ProductosDetalle(ProductoId,MaterialId,Asociacion) Values({0},{1},{2})", Retornar, item.MaterialId, item.Asociacion));
+                      cone.Ejecutar(String.Format("Insert into ProductosDetalle(ProductoId,MaterialId,Asociacion) Values({0},{1},{2})", Retornar,item.MaterialId, item.Asociacion));
                     }
                 }
 

@@ -28,7 +28,8 @@ namespace VentanaGzWeb.Consultas
                 ProyectoCalendar.Visible = false;
                 ProyectoSegundoCalendar.Visible = false;
                 ImprimirButton.Visible = false;
-               
+
+                BuscarTextBox.Text = Request.QueryString["IdProyecto"];
 
                 FalseControl();
                

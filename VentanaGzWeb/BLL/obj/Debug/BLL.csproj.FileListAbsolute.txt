@@ -26,3 +26,10 @@ C:\GitHub\ProyectoAplicada2\VentanaGzWeb\BLL\bin\Debug\DAL.pdb
 C:\GitHub\ProyectoAplicada2\VentanaGzWeb\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\GitHub\ProyectoAplicada2\VentanaGzWeb\BLL\obj\Debug\BLL.dll
 C:\GitHub\ProyectoAplicada2\VentanaGzWeb\BLL\obj\Debug\BLL.pdb
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Debug\BLL.dll
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Debug\BLL.pdb
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Debug\DAL.dll
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Debug\DAL.pdb
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Debug\BLL.dll
+C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Debug\BLL.pdb
