@@ -446,7 +446,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.7889in</Height>
+    <Height>1.79932in</Height>
     <Style>
       <Border>
         <Style>None</Style>
@@ -472,7 +472,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Calle 8 no. 198 Ens. San Martin,  Tel:809-588-8073</Value>
+                  <Value>Calle 8 no. 146 Ensanches San Martin,  Tel:809-588-8073</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -481,7 +481,19 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value> Cel 809-841-9356, San Francisco de Macoris, RD</Value>
+                  <Value> Cel. 809-841-9356, San Francisco de </Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
+                  <Value>Macorís</Value>
+                  <Style>
+                    <FontStyle>Normal</FontStyle>
+                    <FontWeight>Normal</FontWeight>
+                    <TextDecoration>None</TextDecoration>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>, RD</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -489,10 +501,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox15</rd:DefaultName>
-          <Top>2.17027cm</Top>
-          <Left>3.13567cm</Left>
+          <Top>2.20169cm</Top>
+          <Left>3.45895cm</Left>
           <Height>0.96449cm</Height>
-          <Width>8.5325cm</Width>
+          <Width>9.51146cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -586,10 +598,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox17</rd:DefaultName>
-          <Top>2.16641cm</Top>
-          <Left>11.80928cm</Left>
+          <Top>2.27225cm</Top>
+          <Left>13.1468cm</Left>
           <Height>0.96449cm</Height>
-          <Width>4.1051cm</Width>
+          <Width>3.04677cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
@@ -641,6 +653,10 @@
           <Paragraphs>
             <Paragraph>
               <TextRuns>
+                <TextRun>
+                  <Value>Fecha: </Value>
+                  <Style />
+                </TextRun>
                 <TextRun>
                   <Value>=First(Fields!Fecha.Value, "Proyecto")</Value>
                   <Style />
@@ -726,15 +742,9 @@
                   </Style>
                 </TextRun>
                 <TextRun>
-                  <Value>El Cliente:</Value>
+                  <Value>El Cliente:_______________________________</Value>
                   <Style>
                     <TextDecoration>None</TextDecoration>
-                  </Style>
-                </TextRun>
-                <TextRun>
-                  <Value xml:space="preserve">                                                       </Value>
-                  <Style>
-                    <TextDecoration>Underline</TextDecoration>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -743,13 +753,24 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value xml:space="preserve">                                                         </Value>
+                  <Value xml:space="preserve">                                              </Value>
+                  <Style>
+                    <TextDecoration>None</TextDecoration>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value xml:space="preserve">                                                   </Value>
                   <Style>
                     <TextDecoration>None</TextDecoration>
                   </Style>
                 </TextRun>
                 <TextRun>
-                  <Value>FAVO EXIGIR RECIBO DE PAGO</Value>
+                  <Value>FAVO EXIGIR RECIBO DE PAGO                        </Value>
                   <Style>
                     <FontSize>9pt</FontSize>
                     <TextDecoration>None</TextDecoration>
@@ -761,8 +782,8 @@
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>0.93514cm</Top>
-          <Left>1.24036cm</Left>
-          <Height>1.64014cm</Height>
+          <Left>0.29317cm</Left>
+          <Height>1.32264cm</Height>
           <Width>15.23213cm</Width>
           <Style>
             <Border>
@@ -798,7 +819,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Height>0.6cm</Height>
-          <Width>16.47249cm</Width>
+          <Width>16.19357cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>

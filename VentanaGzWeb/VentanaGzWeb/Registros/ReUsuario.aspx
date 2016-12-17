@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/InicioGz.Master" AutoEventWireup="true" CodeBehind="ReUsuario.aspx.cs" Inherits="VentanaGzWeb.Registros.RUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table style="width: 100%; height: 591px;">
+    <table style="width: 100%; height: 703px;">
         <tr>
             <td style="height: 167px; font-family:Forte" class="text-center"><asp:Image ID="ProductoImagen" runat="server" Height="124px" ImageUrl='~/Imagenes/Office-Customer-Male-Light-icon.png' Width="148px" />
                         <br />
@@ -18,7 +18,7 @@
         </tr>
         <tr>
             <td style="height: 330px">
-                <table style="width: 100%; height: 281px;">
+                <table style="width: 100%; height: 449px;">
                     <tr>
                         <td class="auto-style14" style="height: 35px; text-align: center;">
                     &nbsp;&nbsp; Nombre&nbsp;&nbsp;
@@ -86,15 +86,11 @@
 &nbsp;
                     <asp:Button CssClass="btn btn-success" ID="LimpiarButton" runat="server" Height="29px" Text="Limpiar" Width="116px" OnClick="LimpiarButton_Click" />
                     &nbsp; <asp:Button CssClass="btn btn-danger" ID="EliminarButton" runat="server" Height="29px" Text="Eliminar" Width="116px" OnClick="EliminarButton_Click" ValidationGroup="vg2" />
+                            <br />
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
-        <tr>
-            <td>&nbsp;
-                    &nbsp;
-                    &nbsp;&nbsp;</td>
-        </tr>
-    </table>
+        </table>
 </asp:Content>

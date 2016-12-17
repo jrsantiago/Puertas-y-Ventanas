@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/InicioGz.Master" AutoEventWireup="true" CodeBehind="ConsultaUsuario.aspx.cs" Inherits="VentanaGzWeb.Consultas.ConsUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table style="width:100%;">
+    <table style="width:100%; height: 736px">
         <tr>
             <td class="auto-style14" style="height: 162px; width: 524px">&nbsp;</td>
             <td class="auto-style14" style="height: 162px">&nbsp;<br />

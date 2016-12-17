@@ -6,6 +6,272 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\juniorsantiago\Desktop</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\inetpub\wwwroot</_PublishTargetUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <File Include="apiapp.json">
+      <publishTime>12/03/2016 19:39:35</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>12/14/2016 12:36:35</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>12/14/2016 12:36:34</publishTime>
+    </File>
+    <File Include="bin/BLL.dll">
+      <publishTime>12/13/2016 19:28:32</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>12/03/2016 19:44:07</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:26:06</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:25:54</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:27:18</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:26:02</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:25:22</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:27:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>05/29/2015 21:27:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>02/21/2014 06:28:46</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:25:24</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:25:46</publishTime>
+    </File>
+    <File Include="bin/VentanaGzWeb.dll">
+      <publishTime>12/14/2016 12:36:24</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:27:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 06:28:10</publishTime>
+    </File>
+    <File Include="Consultas/ConsultaClientes.aspx">
+      <publishTime>11/19/2016 19:26:55</publishTime>
+    </File>
+    <File Include="Consultas/ConsultaMateriales.aspx">
+      <publishTime>11/30/2016 05:01:46</publishTime>
+    </File>
+    <File Include="Consultas/ConsultaPresupuesto.aspx">
+      <publishTime>11/29/2016 16:01:46</publishTime>
+    </File>
+    <File Include="Consultas/ConsultaProducto.aspx">
+      <publishTime>12/02/2016 15:50:20</publishTime>
+    </File>
+    <File Include="Consultas/ConsultaProyecto.aspx">
+      <publishTime>12/10/2016 19:51:15</publishTime>
+    </File>
+    <File Include="Consultas/ConsultaUsuario.aspx">
+      <publishTime>11/19/2016 16:36:15</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.css">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.css.map">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.min.css">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.min.css.map">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap.css.map">
+      <publishTime>11/03/2016 14:54:34</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css.map">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="DbVentanaGzWebDataSet.xsc">
+      <publishTime>10/17/2016 15:58:44</publishTime>
+    </File>
+    <File Include="DbVentanaGzWebDataSet.xss">
+      <publishTime>10/17/2016 15:58:43</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/12/2016 02:02:36</publishTime>
+    </File>
+    <File Include="Imagenes/Arrow-Back-icon.png">
+      <publishTime>06/24/2016 22:36:39</publishTime>
+    </File>
+    <File Include="Imagenes/Blanco-Griz.jpg">
+      <publishTime>06/23/2016 00:27:48</publishTime>
+    </File>
+    <File Include="Imagenes/Calendar-icon.png">
+      <publishTime>11/03/2016 16:54:01</publishTime>
+    </File>
+    <File Include="Imagenes/Cliente or usuario.png">
+      <publishTime>11/30/2016 18:56:56</publishTime>
+    </File>
+    <File Include="Imagenes/Enter.png">
+      <publishTime>06/14/2016 23:16:38</publishTime>
+    </File>
+    <File Include="Imagenes/event-search-icon.png">
+      <publishTime>11/03/2016 16:51:44</publishTime>
+    </File>
+    <File Include="Imagenes/Facebook-icon.png">
+      <publishTime>12/12/2016 01:44:29</publishTime>
+    </File>
+    <File Include="Imagenes/gear-icon.png">
+      <publishTime>11/29/2016 21:31:08</publishTime>
+    </File>
+    <File Include="Imagenes/Gmail-icon.png">
+      <publishTime>12/12/2016 01:44:47</publishTime>
+    </File>
+    <File Include="Imagenes/images %281%29.jpg">
+      <publishTime>10/20/2016 00:04:15</publishTime>
+    </File>
+    <File Include="Imagenes/ImgPass.png">
+      <publishTime>11/25/2016 21:09:03</publishTime>
+    </File>
+    <File Include="Imagenes/ImgUser.PNG">
+      <publishTime>11/25/2016 21:02:34</publishTime>
+    </File>
+    <File Include="Imagenes/Key-icon.png">
+      <publishTime>07/01/2016 10:39:11</publishTime>
+    </File>
+    <File Include="Imagenes/LOG.jpg">
+      <publishTime>11/25/2016 14:34:16</publishTime>
+    </File>
+    <File Include="Imagenes/LOG1.jpg">
+      <publishTime>11/25/2016 20:09:54</publishTime>
+    </File>
+    <File Include="Imagenes/Office-Customer-Male-Light-icon.png">
+      <publishTime>05/22/2016 23:24:17</publishTime>
+    </File>
+    <File Include="Imagenes/Phone-icon.png">
+      <publishTime>12/12/2016 01:54:06</publishTime>
+    </File>
+    <File Include="Imagenes/Rob-Sanders-Gear-Gear.ico">
+      <publishTime>09/06/2016 15:53:31</publishTime>
+    </File>
+    <File Include="Imagenes/SEO-icon %282%29.png">
+      <publishTime>11/19/2016 19:37:58</publishTime>
+    </File>
+    <File Include="Imagenes/SEO-icon.png">
+      <publishTime>10/31/2016 18:32:55</publishTime>
+    </File>
+    <File Include="Imagenes/Status-dialog-password-icon.png">
+      <publishTime>05/23/2016 00:00:20</publishTime>
+    </File>
+    <File Include="Imagenes/user-login-icon.png">
+      <publishTime>05/22/2016 23:59:55</publishTime>
+    </File>
+    <File Include="Imagenes/Ventana.png">
+      <publishTime>05/23/2016 00:43:12</publishTime>
+    </File>
+    <File Include="Imagenes/Whatsapp-icon.png">
+      <publishTime>12/12/2016 01:55:15</publishTime>
+    </File>
+    <File Include="InicioGz.Master">
+      <publishTime>12/12/2016 01:39:28</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>07/25/2016 15:53:30</publishTime>
+    </File>
+    <File Include="js/jquery-3.1.1.min.js">
+      <publishTime>10/16/2016 18:49:49</publishTime>
+    </File>
+    <File Include="js/npm.js">
+      <publishTime>07/25/2016 15:53:30</publishTime>
+    </File>
+    <File Include="MaterialesDbVentanaGzWebDataSet.xsc">
+      <publishTime>10/23/2016 22:33:04</publishTime>
+    </File>
+    <File Include="MaterialesDbVentanaGzWebDataSet.xss">
+      <publishTime>10/23/2016 22:33:04</publishTime>
+    </File>
+    <File Include="Metadata/deploymentTemplates/apiappconfig.azureresource.json">
+      <publishTime>12/03/2016 19:39:34</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/01/2016 00:06:04</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>12/14/2016 12:36:27</publishTime>
+    </File>
+    <File Include="PresupuestoVentanaWebDataSet.xsc">
+      <publishTime>12/12/2016 05:11:37</publishTime>
+    </File>
+    <File Include="PresupuestoVentanaWebDataSet.xss">
+      <publishTime>12/12/2016 05:11:37</publishTime>
+    </File>
+    <File Include="ProyectoWebDataSet.xsc">
+      <publishTime>12/12/2016 01:14:04</publishTime>
+    </File>
+    <File Include="ProyectoWebDataSet.xss">
+      <publishTime>12/12/2016 01:14:04</publishTime>
+    </File>
+    <File Include="Registros/ReCliente.aspx">
+      <publishTime>12/02/2016 21:06:42</publishTime>
+    </File>
+    <File Include="Registros/ReMateriales.aspx">
+      <publishTime>12/02/2016 16:49:39</publishTime>
+    </File>
+    <File Include="Registros/ReProductos.aspx">
+      <publishTime>12/12/2016 03:14:31</publishTime>
+    </File>
+    <File Include="Registros/ReProyectoDetalle.aspx">
+      <publishTime>12/12/2016 03:19:24</publishTime>
+    </File>
+    <File Include="Registros/ReUsuario.aspx">
+      <publishTime>12/02/2016 16:38:34</publishTime>
+    </File>
+    <File Include="Reportes/ReporteMaterialesWebForm.aspx">
+      <publishTime>11/26/2016 19:24:32</publishTime>
+    </File>
+    <File Include="Reportes/ReportePresupuestoWebForm.aspx">
+      <publishTime>11/29/2016 15:25:47</publishTime>
+    </File>
+    <File Include="Reportes/ReporteProyectoWebForm.aspx">
+      <publishTime>11/30/2016 11:23:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>11/01/2016 00:06:03</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.js">
+      <publishTime>11/01/2016 00:06:03</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.map">
+      <publishTime>11/01/2016 00:06:03</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.js">
+      <publishTime>11/01/2016 00:06:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>11/01/2016 00:06:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>11/01/2016 00:06:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/14/2016 12:36:24</publishTime>
+    </File>
+  </ItemGroup>
 </Project>

@@ -5,3 +5,10 @@ C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Release\DAL.pdb
 C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
 C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Release\BLL.dll
 C:\GitHub\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Release\BLL.pdb
+C:\Users\juniorsantiago\Desktop\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Release\BLL.dll
+C:\Users\juniorsantiago\Desktop\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Release\BLL.pdb
+C:\Users\juniorsantiago\Desktop\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Release\DAL.dll
+C:\Users\juniorsantiago\Desktop\Puertas-y-Ventanas\VentanaGzWeb\BLL\bin\Release\DAL.pdb
+C:\Users\juniorsantiago\Desktop\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\juniorsantiago\Desktop\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Release\BLL.dll
+C:\Users\juniorsantiago\Desktop\Puertas-y-Ventanas\VentanaGzWeb\BLL\obj\Release\BLL.pdb

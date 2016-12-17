@@ -19,7 +19,7 @@ namespace VentanaGzWeb.Consultas
         {
             if (!IsPostBack)
             {
-                ImprimirButton.Visible = false;
+                ImprimirButton.Visible = true;
             }
         }
         public ConsultaMaeriales()

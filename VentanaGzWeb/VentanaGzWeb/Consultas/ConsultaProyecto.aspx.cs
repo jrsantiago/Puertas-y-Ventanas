@@ -27,7 +27,7 @@ namespace VentanaGzWeb.Consultas
             {
                 ProyectoCalendar.Visible = false;
                 ProyectoSegundoCalendar.Visible = false;
-                ImprimirButton.Visible = false;
+                
 
                 BuscarTextBox.Text = Request.QueryString["IdProyecto"];
 
@@ -94,13 +94,7 @@ namespace VentanaGzWeb.Consultas
                     Utilitarios.ShowToastr(this, "Id incorrecto", "Mensaje", "error");
                 }
 
-                if (ProyectoGridView.Rows.Count > 0)
-                {
-                    ImprimirButton.Visible = true;
-                }else
-                {
-                    ImprimirButton.Visible = false;
-                }
+            
 
             }
         }
@@ -150,7 +144,7 @@ namespace VentanaGzWeb.Consultas
         {
             if (ProyectoGridView.Rows.Count==0)
             {
-                Utilitarios.ShowToastr(this, "Error", "Mensaje", "error");
+                Response.Write("<script type='text/javascript'>detailedresults=window.open('/Reportes/ReporteProyectoWebForm.aspx?Text= " + this.Text + "&Orden= " + this.orden + "');</script>");
             }
             else
             {

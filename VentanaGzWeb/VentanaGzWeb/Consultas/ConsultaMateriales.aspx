@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/InicioGz.Master" AutoEventWireup="true" CodeBehind="ConsultaMateriales.aspx.cs" Inherits="VentanaGzWeb.Consultas.ConsultaMaeriales" %><%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table style="width: 100%; height: 489px;">
+    <table style="width: 100%; height: 736px"">
         <tr>
             <td class="auto-style14" style="height: 74px; width: 1345px">&nbsp;</td>
             <td class="auto-style14" style="height: 74px; width: 808px;"><span style="font-size: xx-large; font-family:Forte; color: #0B0664;"><strong>Consulta </strong>M<span style="font-weight: bold">ateriales</span></span>&nbsp; <span class="auto-style16" style="font-size: xx-large; font-family:Arial">

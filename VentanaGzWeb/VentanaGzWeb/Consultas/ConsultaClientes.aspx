@@ -10,6 +10,7 @@
                     <td>Consulta Clientes
                 <span  style="font-size: xx-large; font-family: Forte" class="auto-style16" ><asp:Image ID="UsuarioImagen" ImageUrl='~/Imagenes/Cliente or usuario.png' runat="server" Height="98px" Width="103px" /></span></td>
                 </tr>
+               
             </table>
         </dt>
         <p>
@@ -47,7 +48,7 @@
       
     <dt class="text-center">
         
-        <table style="width:100%;">
+        <table style="width:100%; height: 466px;">
             <tr>
                 <bt>
                                         <td>&nbsp;</td>

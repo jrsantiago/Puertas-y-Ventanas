@@ -401,7 +401,7 @@
         <DataSetName>Usuario</DataSetName>
         <Top>0.28222cm</Top>
         <Left>1.11125cm</Left>
-        <Height>1.09417cm</Height>
+        <Height>1.09416cm</Height>
         <Width>15.39875cm</Width>
         <Style>
           <Border>
@@ -526,7 +526,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Calle 8 no. 198 Ens. San Martin,  Tel:809-588-8073</Value>
+                  <Value>Calle 8 no. 146 Ens. San Martin,  Tel:809-588-8073</Value>
                   <Style />
                 </TextRun>
               </TextRuns>

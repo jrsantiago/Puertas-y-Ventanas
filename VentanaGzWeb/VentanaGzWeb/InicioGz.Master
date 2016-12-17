@@ -20,17 +20,13 @@
     <style type="text/css">
 
 
-        .auto-style8 {
-            width: 1100px;
-            height: 589px;
-            margin-right: 0px;
-        }
+
         .auto-style10 {
-            width: 632px;
-            height: 504px;
+            width: 97%;
+            height: 107%;
         }
         .auto-style14 {
-            height: 198px;
+            height: 108px;
             width: 851px;
         }
         .auto-style15 {
@@ -50,7 +46,7 @@
         }
         .auto-style21 {
             float: left;
-            width: 945px;
+            width: 1197px;
         }
         .auto-style22 {
             border-style: none;
@@ -68,15 +64,27 @@
         .auto-style23 {
             width: 421px;
             left: 20%;
+            height: 107%;
         }
         .auto-style24 {
             width: 220px;
             height: 91px;
         }
+
+        html, body {
+            margin: 0px;
+            height: 100%;
+        }
+
+        .auto-style25 {
+            width: 100%;
+            height: 349px;
+        }
+
         </style>
   
 </head>
-<body>
+<body style="height:100%">
     <form id="form1" runat="server">
 
 
@@ -188,12 +196,12 @@
         
 
         
-   <table style="font-family:Arial; width:100%" class="auto-style8">
+   <table style="font-family:Arial; " class="auto-style25" >
     
        <tr>
 
-            <td style="background-color:#d7acac; " class="auto-style23" class="auto-style20" >&nbsp;</td>
-            <td style="background-color:#e8e5e5; width:100%" class="auto-style10">
+            <td style="background-color:#d7acac;" class="auto-style23" class="auto-style20" ></td>
+            <td style="background-color:#e8e5e5;" class="auto-style10">
                
             
                          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -207,7 +215,7 @@
 
 
        <tr>
-           <td colspan="2" style="height:80px; background-color:#93beed;">
+           <td colspan="2" style="height:100px; background-color:#93beed;">
               <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Informacion web</b>
 
            </td>

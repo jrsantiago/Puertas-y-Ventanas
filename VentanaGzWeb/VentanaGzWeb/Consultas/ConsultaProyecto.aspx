@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/InicioGz.Master" AutoEventWireup="true" CodeBehind="ConsultaProyecto.aspx.cs" Inherits="VentanaGzWeb.Consultas.ConsultaProyecto" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table  class="text-center" style="width:100%; height: 209px;">
+    <table  class="text-center" style="width:100%;height: 736px">
         <tr style="font-family:Forte">
             <td class="auto-style16" style="font-size: xx-large ;color: #0B0664">Consulta Proyectos&nbsp;
                 <span  style="font-size: xx-large; font-family:Arial; width: 512px;" class="auto-style16" ><asp:Image ID="UsuarioImagen" ImageUrl='~/Imagenes/SEO-icon (2).png' runat="server" Height="78px" Width="77px" /></span>

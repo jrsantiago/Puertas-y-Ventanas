@@ -1,13 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/InicioGz.Master" AutoEventWireup="true" CodeBehind="ReProyectoDetalle.aspx.cs" Inherits="VentanaGzWeb.Registros.ReProyectoDetalle" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table style="width:100%;">
+    <table style="width:100%;height: 703px;">
         <tr>
             <td class="text-center" style="height: 97px; font-family:Forte"> &nbsp; <asp:Image ID="ProductoImagen" runat="server" Height="138px" ImageUrl='~/Imagenes/gear-icon.png' Width="168px" />
                 <strong>
                 <h1 style="color: #000066; width: 1138px;">Registro Proyecto</h1></strong></td> 
         </tr>
         <tr>
-            <td class="text-center">Proyecto Id
+            <td class="text-center"><strong>Proyecto Id
                 &nbsp;<asp:TextBox ID="BuscarIdTextBox" runat="server" ValidationGroup="vgPro"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="BuscarIdTextBox" ErrorMessage="Campo Proyecto Id Vacio" ForeColor="#CC0000" style="font-size: x-large" ValidationGroup="vgPro">*</asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="BuscarIdTextBox" ErrorMessage="Solo Caracteres Numericos" ForeColor="#CC0000" style="font-size: x-large" ValidationExpression="[0-9]+" ValidationGroup="vgPro">*</asp:RegularExpressionValidator>
@@ -15,52 +15,57 @@
                 <br />
                 <br />
                 <br />
+                        </strong>
                         </td>
         </tr>
         <tr>
             <td>
                 <table style="width: 100%; height: 172px;">
                     <tr>
-                        <td class="text-center" style="height: 72px"> Cliente Id <asp:TextBox ID="BuscarClienteTextBox" runat="server" ValidationGroup="vgD" Width="149px"></asp:TextBox>
+                        <td class="text-center" style="height: 72px"> <strong>Cliente Id <asp:TextBox ID="BuscarClienteTextBox" runat="server" ValidationGroup="vgD" Width="149px"></asp:TextBox>
 &nbsp;&nbsp;<asp:Button ID="BuscarClienteButton" CssClass="btn btn-primary" runat="server" Text="Buscar" Width="91px" OnClick="BuscarClienteButton_Click" ValidationGroup="vgD" />
                         &nbsp;&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="BuscarClienteTextBox" ErrorMessage="Solo Caracteres Numericos" ForeColor="#CC0000" style="font-size: x-large" ValidationExpression="[0-9]+" ValidationGroup="vgD">*</asp:RegularExpressionValidator>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="text-center" style="height: 62px">Cliente&nbsp;
+                    <tr style="background-color:#c2bfbf">
+                        <td class="text-center" style="height: 62px"><strong>Cliente&nbsp;
                             <asp:TextBox ID="ClienteTextBox" runat="server" Width="120px" ReadOnly="True" ValidationGroup="vgD"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="ClienteTextBox" ErrorMessage="Campo Cliente Vacio" ForeColor="#CC0000" style="font-size: x-large" ValidationGroup="vgc">*</asp:RequiredFieldValidator>
                             &nbsp;&nbsp;&nbsp;&nbsp; Fecha&nbsp;
                             <asp:TextBox ID="FechaTextBox" runat="server" Height="25px" Width="80px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+                            </strong>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="text-center" style="height: 55px"> Producto &nbsp;<asp:DropDownList ID="TrabajoDropDownList" runat="server" Height="20px" Width="176px">
+                    <tr style="background-color:#c2bfbf">
+                        <td class="text-center" style="height: 55px"> <strong>Producto &nbsp;<asp:DropDownList ID="TrabajoDropDownList" runat="server" Height="20px" Width="176px">
                             </asp:DropDownList>
                             &nbsp;&nbsp;Ancho&nbsp;
                             <asp:TextBox ID="AnchoTextBox" runat="server" Width="68px" ValidationGroup="vgD"></asp:TextBox>
-                            &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="AnchoTextBox" ErrorMessage="Campo Ancho Vacio" ForeColor="#CC0000" style="font-size: x-large" ValidationGroup="vgc">*</asp:RequiredFieldValidator>
+                            </strong>&nbsp;<strong><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="AnchoTextBox" ErrorMessage="Campo Ancho Vacio" ForeColor="#CC0000" style="font-size: x-large" ValidationGroup="vgc">*</asp:RequiredFieldValidator>
                             <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="AnchoTextBox" ErrorMessage="Solo Caracteres Numericos" ForeColor="#CC0000" style="font-size: x-large" ValidationExpression="^(\d|-)?(\d|,)*\.?\d*$" ValidationGroup="vgc">*</asp:RegularExpressionValidator>
 &nbsp;Atura&nbsp;
                             <asp:TextBox ID="AlturaTextBox" runat="server" Width="68px" ValidationGroup="vgD"></asp:TextBox>
-&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="AlturaTextBox" ErrorMessage="Campo Altura Vacio" ForeColor="#CC0000" style="font-size: x-large" ValidationGroup="vgc">*</asp:RequiredFieldValidator>
+                            </strong>&nbsp;<strong><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="AlturaTextBox" ErrorMessage="Campo Altura Vacio" ForeColor="#CC0000" style="font-size: x-large" ValidationGroup="vgc">*</asp:RequiredFieldValidator>
                             <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="AlturaTextBox" ErrorMessage="Solo Caracteres Numericos" ForeColor="#CC0000" style="font-size: x-large" ValidationExpression="^(\d|-)?(\d|,)*\.?\d*$" ValidationGroup="vgc">*</asp:RegularExpressionValidator>
                             &nbsp;&nbsp;Cantidad&nbsp;<asp:TextBox ID="CantidadTextBox0" runat="server" Width="68px" ValidationGroup="vgD"></asp:TextBox>
-                            &nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="AlturaTextBox" ErrorMessage="Solo Caracteres Numericos" ForeColor="#CC0000" style="font-size: x-large" ValidationExpression="[0-9]+" ValidationGroup="vgc">*</asp:RegularExpressionValidator>
+                            </strong>&nbsp;<strong><asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="AlturaTextBox" ErrorMessage="Solo Caracteres Numericos" ForeColor="#CC0000" style="font-size: x-large" ValidationExpression="[0-9]+" ValidationGroup="vgc">*</asp:RegularExpressionValidator>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:Button ID="AgregarButton" runat="server" Text="Agregar" Width="113px" OnClick="AgregarButton_Click" ValidationGroup="vgc" />
+                            </strong>
                         </td>
                     </tr>
                     <tr>
                         <td class="text-right" style="height: 113px">
-                            <table class="nav-justified">
+                            <table class="nav-justified" style="height: 401px">
                                 <tr>
-                                    <td style="width: 125px" class="auto-style13">&nbsp;</td>
+                                    <td style="width: 125px" class="auto-style13"><strong></strong></td>
                                     <td style="width: 661px" class="text-center">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </strong>
                                         <div style=" vertical-align: top; overflow: auto; width: 744px; height:
 375px; margin-bottom: 1px;" class="text-right" >
+                                            <strong>
                                         <asp:GridView ID="DetalleGridView" runat="server" Height="335px" style="margin-left: 88px" Width="582px" AutoGenerateColumns="False" OnRowDataBound="DetalleGridView_RowDataBound">
                                             <Columns>
                                                 <asp:BoundField DataField="Descripcion" HeaderStyle-BackColor="#5880D7" ItemStyle-BackColor="White" ItemStyle-BorderWidth="2px" HeaderStyle-BorderWidth="3px" HeaderText="Descripción" >
@@ -99,9 +104,14 @@ Total&nbsp;&nbsp; <asp:TextBox ID="TotalTextBox" runat="server" Width="74px" Rea
                                             <br />
                                             <br />
                                            
+                                            </strong>
+                                           
                                    </div>
+                                 
+                                       </td>
+                                    <td style="width: 193px">
                                         <div class="text-left">
-                                      <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="#CC0000" ValidationGroup="vgD" />
+                                      <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="#CC0000" ValidationGroup="vgD" Width="179px" />
                                         </div>
                                         <div class="text-left">
                                         <asp:ValidationSummary ID="ValidationSummary2" runat="server" ForeColor="#CC0000" ValidationGroup="vgPro" />
@@ -109,12 +119,11 @@ Total&nbsp;&nbsp; <asp:TextBox ID="TotalTextBox" runat="server" Width="74px" Rea
                                         </div>
                                         <div class="text-left">
                                        
-                                        <asp:ValidationSummary ID="ValidationSummary3" runat="server" ForeColor="#CC0000" ValidationGroup="vgc" />
+                                        <asp:ValidationSummary ID="ValidationSummary3" runat="server" ForeColor="#CC0000" ValidationGroup="vgc" Width="185px" />
+                                            </strong>
                                         </div>
-                                       </td>
-                                    <td style="width: 193px">
-                                        &nbsp;</td>
-                                    <td>&nbsp;</td>
+                                    </td>
+                                   
                                 </tr>
                             </table>
                         </td>
@@ -124,11 +133,12 @@ Total&nbsp;&nbsp; <asp:TextBox ID="TotalTextBox" runat="server" Width="74px" Rea
         </tr>
         <tr>
             <td class="text-center" style="height: 100px">
-                    &nbsp;<asp:Button ID="GuardarButton" CssClass="btn btn-primary" runat="server" Text="Guardar" Width="99px" OnClick="GuardarButton_Click" ValidationGroup="vgD" />
+                    <strong>&nbsp;<asp:Button ID="GuardarButton" CssClass="btn btn-primary" runat="server" Text="Guardar" Width="99px" OnClick="GuardarButton_Click" ValidationGroup="vgD" />
 &nbsp;&nbsp;
                 <asp:Button ID="LimpiarButton" runat="server" CssClass="btn btn-success" Text="Limpiar" Width="99px" OnClick="LimpiarButton_Click1" />
 &nbsp;&nbsp;
                 <asp:Button ID="EliminarButton" CssClass="btn btn-danger" runat="server" Text="Eliminar" Width="99px" OnClick="EliminarButton_Click1" ValidationGroup="vgPro" />
+                    </strong>
             </td>
         </tr>
     </table>
